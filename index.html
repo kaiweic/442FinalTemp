@@ -66,9 +66,21 @@
 
 		/* demo */
 
-		#intro {
-			margin-bottom: 320px;
-		}
+        #d_back_black {
+            padding-bottom: 320px;
+            background: #181619;
+            color: #efefef;
+            line-height: 1.7;
+            font-size: 15px;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #d_back_white {
+            padding-top: 3rem;
+            background-color: #fafafa;
+            color: #181619;
+        }
 
 		#outro {
 			height: 640px;
@@ -78,8 +90,6 @@
 
 		#scroll {
 			position: relative;
-			border-top: 2px dashed #000;
-			border-bottom: 2px dashed #000;
 		}
 
 		.scroll__graphic {
@@ -135,7 +145,7 @@
 		}
 
 		.step.is-active {
-			background-color: lightgoldenrodyellow;
+			background-color: #ddd;
 		}
 
 		.step p {
@@ -146,32 +156,36 @@
         </style>
     </head>
     <body>
-        <section id = "intro">
-            <h1 class="intro__hed">Divided Congress And Coverage?</h1>
-            <p class="intro__dek">
-                [Add Introduction]
-            </p>
-        </section>
-        <section id = "scroll">
-            <div class="scroll__graphic" style="width: 292px; height: 410px;">  <!-- This is where the visualization goes -->               
-                <p>1</p>
-            </div>
-            <!-- This is where text goes, as we scroll -->
-            <div class="scroll__text">
-                <div class="step is-active" data-step="1" data-scrollama-index="0" style="height: 615px;">
-                    <p>[Add scroll text here]</p>
+        <div id = "d_back_black">
+            <section id = "intro">
+                    <h1 class="intro__hed">Divided Congress And Coverage?</h1>
+                    <p class="intro__dek">
+                        [Add Introduction]
+                    </p>
+            </section>
+        </div>
+        <div id = "d_back_white">
+            <section id = "scroll">
+                <div class="scroll__graphic" style="width: 292px; height: 410px;">  <!-- This is where the visualization goes -->               
+                    <p>1</p>
                 </div>
-                <div class="step" data-step="2" data-scrollama-index="1" style="height: 615px;">
-                    <p>[Add scroll text here]</p>
+                <!-- This is where text goes, as we scroll -->
+               <div class="scroll__text">
+                    <div class="step is-active" data-step="1" data-scrollama-index="0" style="height: 615px;">
+                        <p>[Add scroll text here]</p>
+                    </div>
+                    <div class="step" data-step="2" data-scrollama-index="1" style="height: 615px;">
+                        <p>[Add scroll text here]</p>
+                    </div>
+                    <div class="step" data-step="3" data-scrollama-index="2" style="height: 615px;">
+                        <p>[Add scroll text here]</p>
+                    </div>
+                    <div class="step" data-step="4" data-scrollama-index="3" style="height: 615px;">
+                        <p>[Add scroll text here]</p>
+                    </div>
                 </div>
-                <div class="step" data-step="3" data-scrollama-index="2" style="height: 615px;">
-                    <p>[Add scroll text here]</p>
-                </div>
-                <div class="step" data-step="4" data-scrollama-index="3" style="height: 615px;">
-                    <p>[Add scroll text here]</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section id="outro"></section>
         <div class="debug"></div>
 
